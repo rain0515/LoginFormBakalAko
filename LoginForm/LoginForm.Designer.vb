@@ -27,7 +27,7 @@ Partial Class LoginForm
         passwordLabel = New Label()
         usernameTextBox = New TextBox()
         loginButton = New Button()
-        LinkLabel1 = New LinkLabel()
+        forgotPasswordLabel = New LinkLabel()
         passwordTextBox = New TextBox()
         registerButton = New Button()
         MaskedTextBox1 = New MaskedTextBox()
@@ -83,18 +83,18 @@ Partial Class LoginForm
         loginButton.Text = "Login"
         loginButton.UseVisualStyleBackColor = True
         ' 
-        ' LinkLabel1
+        ' forgotPasswordLabel
         ' 
-        LinkLabel1.AutoSize = True
-        LinkLabel1.Font = New Font("Sitka Banner", 10.1999989F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        LinkLabel1.ForeColor = SystemColors.ButtonFace
-        LinkLabel1.LinkColor = SystemColors.ButtonFace
-        LinkLabel1.Location = New Point(218, 277)
-        LinkLabel1.Name = "LinkLabel1"
-        LinkLabel1.Size = New Size(117, 24)
-        LinkLabel1.TabIndex = 7
-        LinkLabel1.TabStop = True
-        LinkLabel1.Text = "Forgot Password"
+        forgotPasswordLabel.AutoSize = True
+        forgotPasswordLabel.Font = New Font("Sitka Banner", 10.1999989F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        forgotPasswordLabel.ForeColor = SystemColors.ButtonFace
+        forgotPasswordLabel.LinkColor = SystemColors.ButtonFace
+        forgotPasswordLabel.Location = New Point(218, 277)
+        forgotPasswordLabel.Name = "forgotPasswordLabel"
+        forgotPasswordLabel.Size = New Size(117, 24)
+        forgotPasswordLabel.TabIndex = 7
+        forgotPasswordLabel.TabStop = True
+        forgotPasswordLabel.Text = "Forgot Password"
         ' 
         ' passwordTextBox
         ' 
@@ -133,7 +133,7 @@ Partial Class LoginForm
         Controls.Add(MaskedTextBox1)
         Controls.Add(registerButton)
         Controls.Add(passwordTextBox)
-        Controls.Add(LinkLabel1)
+        Controls.Add(forgotPasswordLabel)
         Controls.Add(loginButton)
         Controls.Add(usernameTextBox)
         Controls.Add(passwordLabel)
@@ -151,7 +151,7 @@ Partial Class LoginForm
     Friend WithEvents passwordLabel As Label
     Friend WithEvents usernameTextBox As TextBox
     Friend WithEvents loginButton As Button
-    Friend WithEvents LinkLabel1 As LinkLabel
+    Friend WithEvents forgotPasswordLabel As LinkLabel
     Friend WithEvents passwordTextBox As TextBox
     Friend WithEvents registerButton As Button
     Friend WithEvents MaskedTextBox1 As MaskedTextBox
